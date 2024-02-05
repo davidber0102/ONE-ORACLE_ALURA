@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 let numeroSecreto = 0;
 let intentos = 0;
 let listaNumeroSorteados = [];
 let numeroMaximo = 10;
+=======
+let numeroSecreto = generarNumeroSecreto();
+console.log(numeroSecreto);
+>>>>>>> 43709b6b2383194dd47f866e01c5bf76d8974d9b
 
 function asignarTextoElemto(elemento, texto) {
     let elementHtml = document.querySelector(elemento);
@@ -10,6 +15,7 @@ function asignarTextoElemto(elemento, texto) {
 }
 
 function verificarIntento(){
+<<<<<<< HEAD
     let numeroUsuario = parseInt(document.getElementById("valorUsuario").value);
    
     if (numeroUsuario === numeroSecreto){
@@ -70,3 +76,19 @@ function reiniciarJuego() {
 }
 
 condicionesIniciales();
+=======
+    let numeroUsuario = document.getElementById("valorUsuario").value;
+    console.log(numeroUsuario);
+    console.log(numeroSecreto);
+    console.log(numeroUsuario == numeroSecreto);
+    alert('Click desde la funcion')
+    return;
+}
+
+function generarNumeroSecreto() {
+    return Math.floor(Math.random() *10)+1;
+}
+
+asignarTextoElemto('h1', 'Juego del numero de secreto');
+asignarTextoElemto('p',  'Indica un numero del 1 al 100');
+>>>>>>> 43709b6b2383194dd47f866e01c5bf76d8974d9b
