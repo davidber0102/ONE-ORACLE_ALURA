@@ -1,0 +1,27 @@
+pestaña de explorador de internet
+repo.new
+
+-*.md-- markdown-- enguaje de marcación de texto, así como HTML similar a html
+---objetivo y el estado de tu proyecto
+---https://www.aluracursos.com/blog/como-trabajar-con-markdown
+
+
+recomendacion de presetar la siguiente informacion en el README.md    Descripción de su proyecto;
+    funcionalidades;
+    Cómo pueden usarlo los usuarios;
+    Donde los usuarios pueden encontrar ayuda sobre su proyecto;
+    Autores del proyecto.
+
+
+
+    Título e imagen de portada;
+    Insignias;
+    Índice;
+    Descripción del Proyecto;
+    Estado del proyecto;
+    Demostración de funciones y aplicaciones;
+    Acceso al Proyecto;
+    Tecnologías utilizadas;
+    Personas Contribuyentes;
+    Personas Desarrolladoras del Proyecto;
+    Licencia.
