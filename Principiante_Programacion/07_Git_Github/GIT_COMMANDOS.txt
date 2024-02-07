@@ -1,0 +1,66 @@
+git log --oneline
+--- muestra en lista todos los comitis realizados dentro de la ruta especficada
+
+git config --list
+--- muestra en forma de lista resumida los commits realizados
+
+pwd 
+---muestra la ruta en que estas
+
+list
+--muestra las carpetas o archivos de la ruta
+
+clear
+---limpia la consola de git bash
+
+cd 'ruta'
+-- cambia ala  ruta que indiques 
+
+cd..
+---regeesa un directorio arriba
+
+git config user.name "tu nombre"
+---configuracion para agregar tu nombre mismo de github
+
+git config user.email "tu correo electronico"
+---configuracion para agrear tu email mismo que girhub
+
+git init 
+----inicializar una carpeta como repositorio
+
+git status -s
+---- muestra el estatus de la carpetas
+
+git add .
+--- agrega todos los archivos y los deja listo para hace la confirmacion
+git commit -m "Mensaje de la confirmacion"
+---
+
+git remote add origin "ruta de repositorio"
+---agrega un repositorio remoto de un repositorio ya existente
+
+git push origin main 
+----
+
+git push --set-upstream origin master
+--
+
+git remote remove origin
+--- remueve un repositorio remoto
+
+git config --unset http.proxy
+git --global --unset html.proxy
+git --system --unset html.proxy
+
+git config -l --show-origin | grep -i proxy
+
+git pull
+---bajar archivos o actualizar un repositorio a visual studio code
+
+
+git clone https://github.com/GeoICON/edugis-mmqgis.git
+
+git branch ""
+---crea una rama del repositorio
+git checkout
+--checa las ramas que hay en el repositorio
