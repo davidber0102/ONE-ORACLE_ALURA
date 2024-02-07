@@ -1,3 +1,9 @@
+https://devhints.io/git-log-format
+https://devhints.io/
+https://www.digitalocean.com/
+
+https://flisol.paralivre.org/
+
 git log --oneline
 --- muestra en lista todos los comitis realizados dentro de la ruta especficada
 
