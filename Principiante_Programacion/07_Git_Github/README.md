@@ -28,3 +28,5 @@
     Personas Contribuyentes;
     Personas Desarrolladoras del Proyecto;
     Licencia.
+
+   El curso es parte de un ciclo de cursos impartidos por ALURA en compania de ORACLE
