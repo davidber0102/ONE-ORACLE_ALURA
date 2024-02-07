@@ -69,7 +69,15 @@ git pull
 
 git clone https://github.com/GeoICON/edugis-mmqgis.git
 
+git branch
+--muestra las ramas con las que cuenta el repositorio
+
 git branch ""
 ---crea una rama del repositorio
 git checkout
 --checa las ramas que hay en el repositorio
+
+git restore --source dgjdg4f index.html
+----regresa a una version anterior 
+
+git diff
