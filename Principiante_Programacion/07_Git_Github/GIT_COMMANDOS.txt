@@ -42,6 +42,9 @@ git remote add origin "ruta de repositorio"
 git push origin main 
 ----
 
+git push
+----envia archivos agregados ala confirmacion "commit"
+
 git push --set-upstream origin master
 --
 
