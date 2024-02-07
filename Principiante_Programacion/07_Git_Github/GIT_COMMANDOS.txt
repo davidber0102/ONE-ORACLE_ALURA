@@ -74,8 +74,11 @@ git branch
 
 git branch ""
 ---crea una rama del repositorio
-git checkout
---checa las ramas que hay en el repositorio
+git checkout -b NombreRama
+--crea una rama del repositorio
+
+git switch main
+--regresa ala rama principal
 
 git restore --source dgjdg4f index.html
 ----regresa a una version anterior 
