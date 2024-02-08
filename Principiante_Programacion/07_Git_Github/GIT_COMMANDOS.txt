@@ -4,12 +4,26 @@ https://www.digitalocean.com/
 
 https://flisol.paralivre.org/
 
-git log --oneline
---- muestra en lista todos los comitis realizados dentro de la ruta especficada
+************************************************************************************************************
+                        CONFIGURACIONES
+git config user.name "tu nombre"
+---configuracion para agregar tu nombre mismo de github
+
+git config user.email "tu correo electronico"
+---configuracion para agrear tu email mismo que giThub
 
 git config --list
 --- muestra en forma de lista resumida los commits realizados
 
+git config --unset http.proxy
+git --global --unset html.proxy
+git --system --unset html.proxy
+
+git config -l --show-origin | grep -i proxy
+************************************************************************************************************
+
+************************************************************************************************************
+                    COMANDOS LINUX APOYO
 pwd 
 ---muestra la ruta en que estas
 
@@ -24,12 +38,13 @@ cd 'ruta'
 
 cd..
 ---regeesa un directorio arriba
+************************************************************************************************************
 
-git config user.name "tu nombre"
----configuracion para agregar tu nombre mismo de github
-
-git config user.email "tu correo electronico"
----configuracion para agrear tu email mismo que girhub
+************************************************************************************************************
+                COMANDOS GIT
+git clone 
+git clone https://github.com/GeoICON/edugis-mmqgis.git
+---clona un repsoitorio almacenado en GITHUB
 
 git init 
 ----inicializar una carpeta como repositorio
@@ -37,16 +52,22 @@ git init
 git status -s
 ---- muestra el estatus de la carpetas
 
+git log --oneline
+--- muestra en lista todos los comitis realizados dentro de la ruta especficada
+
 git add .
 --- agrega todos los archivos y los deja listo para hace la confirmacion
+
+git add [archivos]
+---agrega un archivo en especifico 
+
+git commit -m [mensaje]
 git commit -m "Mensaje de la confirmacion"
----
+--- realiza la confirmacion de los archivos agregados con git add
 
-git remote add origin "ruta de repositorio"
----agrega un repositorio remoto de un repositorio ya existente
-
+git push
 git push origin main 
-----
+----Envia y actualiza
 
 git push
 ----envia archivos agregados ala confirmacion "commit"
@@ -54,26 +75,21 @@ git push
 git push --set-upstream origin master
 --
 
-git remote remove origin
---- remueve un repositorio remoto
-
-git config --unset http.proxy
-git --global --unset html.proxy
-git --system --unset html.proxy
-
-git config -l --show-origin | grep -i proxy
-
 git pull
 ---bajar archivos o actualizar un repositorio a visual studio code
 
+git remote add origin "ruta de repositorio"
+---agrega un repositorio remoto de un repositorio ya existente
 
-git clone https://github.com/GeoICON/edugis-mmqgis.git
+git remote remove origin
+--- remueve un repositorio remoto
 
 git branch
 --muestra las ramas con las que cuenta el repositorio
 
 git branch ""
 ---crea una rama del repositorio
+
 git checkout -b NombreRama
 --crea una rama del repositorio
 
@@ -84,3 +100,18 @@ git restore --source dgjdg4f index.html
 ----regresa a una version anterior 
 
 git diff
+----ver los cambios en los archivos con confirmacion de diferentes ramas
+
+************************************************************************************************************
+                    WEBS APOYO
+    -https://www.aluracursos.com/blog/iniciando-repositorio-con-git
+    -https://www.aluracursos.com/blog/creando-repositorio-remoto-en-github?utm_source=gnarus&utm_medium=timeline
+    -https://www.aluracursos.com/blog/clonando-un-repositorio-remoto?utm_source=gnarus&utm_medium=timeline
+    -https://www.aluracursos.com/blog/como-evitar-errores-en-git
+    https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
+    https://training.github.com/downloads/es_ES/submodule-vs-subtree-cheat-sheet/
+
+************************************************************************************************************
+
+
+************************************************************************************************************
