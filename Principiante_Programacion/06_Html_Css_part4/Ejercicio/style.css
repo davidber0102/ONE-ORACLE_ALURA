@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body{
-    font-family: 'Montserrat', sans-serif;
-}
+body{    font-family: 'Montserrat', sans-serif;}
+
 header{
     background-color: #bbbbbb;
     padding: 20px 0;
@@ -272,8 +271,7 @@ em strong{
     -moz-transition: 450ms;
     -ms-transition: 450ms;
     -o-transition: 450ms;
-    box-shadow: 10px 10px 30px 15px #000000;
-    
+    box-shadow: 10px 10px 30px 15px #000000;    
     padding: 5px;
 
 }

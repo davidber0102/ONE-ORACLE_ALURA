@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dfe3e5;
+}
+
+header{
+    background-color: #b9dcf3;
+    padding: 10px 0;
+}
+
+.encabezado{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.encabezado img{
+    width: 30%;
+    height: 30%;
+}
+
+nav{
+    position: absolute;
+    top: 90px;
+    right:15px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+
+nav a:hover{
+    color: #0c34e9;
+    text-decoration: underline;
+}
+
+.contenedor_inicio{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.contenedor_inicio{
+    text-align: center;
+    padding: 10px;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 1.7em;
+    margin: 0.5em 0 1em 0;
+    font-weight: bold;
+    clear: left;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+
+.titulo_principal::first-letter{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#logo-alura{
+    width: 190px;
+    
+    margin: 10px 10px 50px 200px;
+    
+}
+
+#logo-oracle{
+    width: 190px;
+    
+    margin: 10px 250px 90px 50px;
+    
+}
+
+.contenedor_inicio p{
+    font-size: 1.6em;
+    text-align: justify;
+    margin: 10px 0 30px 20px;
+}
+
+.img_tec{
+    border: 3px solid #000000;
+    margin-bottom: 20px;
+}
+
+.img_tec img{
+       width: 100%;
+       height: 600px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #b9dcf3;
+}
+
+footer img{
+    width: 20%;
+    height: 20%;
+}
