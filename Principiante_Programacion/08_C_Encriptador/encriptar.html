@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,22 +29,22 @@
         </figure>
         <article>
             <h2 class="titulo_codifica">¡Codigica tu Mensaje!</h2>
-                <p class="txt_codifica">Bienvenido, dentro de esta plataforma Web podras codificar y descodificar mensajes, 
+                <p class="txt_codifica">Bienvenido, dentro de esta Web podras codificar y descodificar mensajes, 
                     esto como parte de completar el CHALLENGE de la plataforma de Alura, con la finalidad
                     de completar los cursos, para continuar dentro de la plataforma y terminar un curso especializado
                 </p>
         </article>
         <section class="cont-botones-txt">            
             <article class="cont_ingresa_txt">
-                <input type="text" name="ingresa_txt" id="ingresa_txt" class="ingresa_txt" placeholder="Ingresa Texto Aqui">
+                <textarea name="ingresa_txt" id="ingresa_txt" class="ingresa_txt" placeholder="Ingresa Texto Aqui" cols="60" rows="10"></textarea>
                 <img src="img_d/bi_exclamation-circle-fill.png" alt="exlamacion">
                     <p class="notificacion">Solo letras minúsculas y sin acentos</p>            
-                <div class="cont_btns">
+                <form action="" class="cont_btns">                    
                     <input type="button" value="Encriptar" class="btn-encriptar" id="btn-encriptar">
                     <input type="button" value="Desencriptar" class="btn-desencriptar" id="btn-desencriptar">
-                </div>
+                </form>
                 <div class="cont_desc">
-                    <textarea name="txt_codificado" id="txt_codificado" class="txt_codificado" cols="66" rows="10"></textarea>
+                    <textarea name="txt_codificado" id="txt_codificado" class="txt_codificado" cols="60" rows="10"></textarea>
                 </div>
                 <input type="button" value="Copiar" class="btn-copiar" id="btn-copiar">
             </article>
@@ -57,13 +57,14 @@
                         <p>Debes ingresar un mensaje correcto para codificar o descodificar</p>
                 </article>            
             </aside>
-        </section>
-        
+        </section>        
     </main>
      <footer>
         <div class="pie_pagina">
             <img src="img/logo_e-s.png" alt="Logo Enncriptar">
         </div>
     </footer>
+
+    <script src="encriptar.js"></script>
 </body>
 </html>
