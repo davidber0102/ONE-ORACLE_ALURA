@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: rgba(237, 243, 255, 0.9);
+    font-size: 1em;
+    font-family: "Oswald", sans-serif;
+}
+
+header{
+    background-color: rgba(196, 231, 253, 0.6);
+}
+
+.contenedor-cabecera{
+    width: 1024px;
+    position: relative;
+    margin: 0 auto;
+    padding: .35em;
+}
+
+.contenedor-cabecera h1{
+    font-size: 1.45em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-left: -2em;
+    padding: .2em;
+    color:rgb(8, 44, 141);
+}
+
+nav{
+    position: absolute;  
+    top: 6em;
+    right:.3em;
+    
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    text-transform: uppercase;
+    color:rgb(7, 48, 161);
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-right: 1em;
+    letter-spacing: .2em;    
+    transition: 0.4s;
+}
+
+nav a:hover{
+    color: #b36505;
+    font-size: 1.45em;
+    text-decoration: underline;
+}
+
+.menu-hamburguesa {
+    font-size: 2em;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  main{
+    z-index: 2;
+    padding: 1em 0;
+    content: "";
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    clear: both;
+    border: #000 solid 3px;
+}
+
+
+
+footer{
+    background-color: rgba(196, 231, 253, 0.6);
+    padding: 1.2em;
+    text-align: center;
+    margin-top: .5em;
+    color: rgba(7, 48, 161, .9);
+}

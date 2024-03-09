@@ -6,18 +6,15 @@ const btnDesencriptar = document.getElementById('btn-desencriptar');
 const btnCopiar = document.getElementById('btn-copiar');
 const resultadoTxt = document.getElementById('txt_codificado');
 const letrasPermitidas = '^[a-z !ñ]+$'
-const msjError='¡-Mensaje a codificar vacio, VERIFICA-!';
-const ObjRemplazar ={
-    a:"ai",
-    e:"enter",
-    i:"imes",
-    o:"ober",
-    u:"ufat"    };
+const msjError='¡Mensaje a codificar vacio, validar datos!';
+const msj = document.getElementById('mensaje');
 
 
 btnEncriptar.addEventListener('click', ecncriptarTxt, false);
 btnDesencriptar.addEventListener('click', descriptarTxt, false);
 btnCopiar.addEventListener('click', copiarTxt, false);
+
+ingresaTxt.addEventListener('keyup', (e) => {e.target.value = e.target.value.toLowerCase()})
 
 function ecncriptarTxt(e) {
     e.preventDefault();
@@ -25,28 +22,69 @@ function ecncriptarTxt(e) {
        resultadoTxt.value= '';
         txt.trim();    
     if (txt.length==0) {
-        setTimeout(function () {alert (msjError);}, 100);
+        msj.innerHTML=msjError, 100;
+    } else if(txt.match(letrasPermitidas)!=null) {
+        let palabras = txt.split(' ');
+        let nuevasPalabras = [];
+
+        for ( let ObjRemplazar of palabras){
+            ObjRemplazar = ObjRemplazar.replaceAll('e','enter');
+            ObjRemplazar = ObjRemplazar.replaceAll('i','imes');
+            ObjRemplazar = ObjRemplazar.replaceAll('a','ai');
+            ObjRemplazar = ObjRemplazar.replaceAll('o','ober');
+            ObjRemplazar = ObjRemplazar.replaceAll('u','ufat'); 
+            nuevasPalabras.push(ObjRemplazar);  
+
+            const palabrasResultado = nuevasPalabras.join(' ');
+            resultadoTxt.value = palabrasResultado;
+            msj.innerHTML= "¡ Mensaje codificado !";
+        }
+    } else {
+        msj.innerHTML= "¡ Verifique sus Datos !"
+        txt.value="";
         return;
-    } 
-    
-    /*
-    https://es.stackoverflow.com/questions/510006/m%C3%A9todo-de-encriptado-en-javascript
-    https://github.com/netosolis1990/cifrado-de-mensajes-con-javascript/blob/master/js/app.js
-    https://github.com/diegofdg/encriptador_de_texto/blob/main/js/script.js
-    else{
-        for(txt.match(letrasPermitidas)!=null){
-            txt = txt.replace(/a|e|i|o|u/g, function(matched){
-            return ObjRemplazar [matched];
     }
-*/
-    
+        
 }
 
 function descriptarTxt(e) {
+    e.preventDefault();
+    let txt = ingresaTxt.value;
+    resultadoTxt.value= '';
+     txt.trim();    
+ if (txt.length==0) {
+     msj.innerHTML=msjError, 100;
+ } else if(txt.match(letrasPermitidas)!=null) {
+     let palabras = txt.split(' ');
+     let nuevasPalabras = [];
 
+     for ( let ObjRemplazar of palabras){
+         ObjRemplazar = ObjRemplazar.replaceAll('enter', 'e');
+         ObjRemplazar = ObjRemplazar.replaceAll('imes', 'i');
+         ObjRemplazar = ObjRemplazar.replaceAll('ai', 'a');
+         ObjRemplazar = ObjRemplazar.replaceAll('ober', 'o');
+         ObjRemplazar = ObjRemplazar.replaceAll('ufat', 'u'); 
+         nuevasPalabras.push(ObjRemplazar);  
+
+         const palabrasResultado = nuevasPalabras.join(' ');
+         resultadoTxt.value = palabrasResultado;
+         msj.innerHTML= "Mensaje Decodificado";
+     }
+ } else {
+    msj.innerHTML= "¡ Verifique sus Datos !"
+     txt.value="";
+     return;
+ }
 }
 
 function copiarTxt(e) {
-
+    e.preventDefault(); 
+    const mensajeCopiar = resultadoTxt.value;
+    navigator.clipboard.writeText(mensajeCopiar);
+    msj.innerHTML= " ¡ Mensaje Copiad !"
     
 }
+
+
+
+

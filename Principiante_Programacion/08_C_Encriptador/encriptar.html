@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="encabezado">
-            <h1><img src="img/logo_e-s.png" alt="Logo Enncriptar"></h1>
+            <h1><img src="img/logo_e-s2.png" alt="Logo Enncriptar"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -36,7 +36,7 @@
         </article>
         <section class="cont-botones-txt">            
             <article class="cont_ingresa_txt">
-                <textarea name="ingresa_txt" id="ingresa_txt" class="ingresa_txt" placeholder="Ingresa Texto Aqui" cols="60" rows="10"></textarea>
+                <textarea name="ingresa_txt" id="ingresa_txt" class="ingresa_txt" placeholder="Ingresa Texto Aqui" cols="60" rows="10" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))"></textarea>
                 <img src="img_d/bi_exclamation-circle-fill.png" alt="exlamacion">
                     <p class="notificacion">Solo letras minúsculas y sin acentos</p>            
                 <form action="" class="cont_btns">                    
@@ -49,19 +49,24 @@
                 <input type="button" value="Copiar" class="btn-copiar" id="btn-copiar">
             </article>
             <aside>
-                <figure>
-                    <img src="img_d/Muñeco.png" alt="">
-                </figure>
                 <article>
-                    <h3>¡Sin Mensaje para Codficiar!</h3>
-                        <p>Debes ingresar un mensaje correcto para codificar o descodificar</p>
-                </article>            
+                    <h3 class="mensaje" id="mensaje">¡Sin Mensaje para Codificiar!</h3>
+                        <p>Considera ingresar un mensaje correcto para codificar o descodificar</p>
+                </article>  
+                <figure>
+                    <img src="img_d/Muñeco2.png" alt="muñeco" class="muñeco">
+                </figure>
+                         
             </aside>
         </section>        
     </main>
      <footer>
         <div class="pie_pagina">
-            <img src="img/logo_e-s.png" alt="Logo Enncriptar">
+            <img src="img/logo_e-s3.png" alt="Logo Enncriptar">
+            <p class="derechos-dbd">&copy; Copyright 2024</p>
+        <p class="derechos-dbd2">Desarrollado con &#x2661; por
+            <a href="https://github.com/davidber0102" target="_blank">David Bernal Diaz</a>
+        </p>
         </div>
     </footer>
 

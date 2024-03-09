@@ -1,122 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-html {
-    scroll-behavior: smooth;
-  }
-body{
-    background-color: #7db3e9;
-    font-size: 1em;
-    font-family: "Oswald", sans-serif;
-}
 
-header{
-    background-color: #cfeaf7;
-}
+/*
+ancho 410
+alto 273
+*/
 
-.contenedor-cabecera{
+.contenedor-bioTot{
+    z-index: 2;  
     width: 1024px;
-    position: relative;
-    margin: 0 auto;
-    padding: .35em;
-}
-
-.contenedor-cabecera h1{
-    font-size: 1.45em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    margin-left: -2em;
-    padding: .2em;
-    color:rgb(8, 44, 141);
-}
-
-nav{
-    position: absolute;  
-    top: 6em;
-    right:.3em;
-    
-}
-
-nav li{
-    display: inline;
-}
-
-nav a{
-    text-transform: uppercase;
-    color:rgb(7, 48, 161);
-    font-weight: bold;
-    font-size: 1.3em;
-    text-decoration: none;
-    margin-right: 1em;
-    letter-spacing: .2em;    
-    transition: 0.4s;
-}
-
-nav a:hover{
-    color: #b36505;
-    text-decoration: underline;
-}
-
-.menu-hamburguesa {
-    font-size: 2em;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
-  }
-  
-  main{
-     padding: 2.5em 0;
-    width: 1024px;
-    margin: 0 auto;
+    height: 100%;
+    content: "";
     display: flex;
     clear: both;
-    border: #000 solid 3px;
+    position: relative;
+    margin: 0 auto;
+}
+main img{
+    border-right: 5px solid rgba(7, 48, 161, .8);
+    border-bottom: 5px solid rgba(7, 48, 161, .8);
 }
 
-main figure{
-    display: inline-block;
-    padding: .5em;
-    margin: 1em;
-}
-.admindbd-img{    
-    border-right: 3px solid #000;
-    border-bottom: 3px solid #000;
-}
-
-.masdbd-img{
-}
-
-.bio_dbd{  
-    float: right;
-    margin-left: .5em;
-    width: 530px;
-
-}
-
-.bio_dbd h2{
-    font-size: 1.8em;
-    text-align: center;
-}
-
-.bio_dbd h3{
-    font-size: 1.5em; 
-    text-align: center;  
-    margin-bottom: .5em;
-}
-
-.bio-texto{
-    font-size: 1.3em;
-    text-align: justify;
-    line-height: 1.5em;
+main .imgindex{ 
+    float: left;
+    margin-right: 5%;
+    padding: 2%;
 }
 
 
-
-
-
-footer{
-    background-color: #cfeaf7;
-    padding: 1.2em;
-    text-align: center;
-    margin-top: .5em;
+main .bio_dbd article{
+    width: 90%; 
+    height: 25%;
+    border: 4px solid rgba(7, 48, 161, .7);    
+    border-radius: 39px;
+    box-shadow: 15px 15px rgba(7, 48, 161, .4);
+    padding: 10%;
+    margin: 5% 0 15% 0;
 }
+
+.imgindex figure img{
+    margin-bottom: 4%;
+}
+

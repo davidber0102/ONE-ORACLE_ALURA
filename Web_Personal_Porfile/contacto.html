@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-gral.css">
+    <link rel="stylesheet" href="css/styile-inicio.css">
+    <link rel="shortcut icon" href="img/logo_icon-t.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>David Bernal | Datos espaciales & Desarrollo Front end</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-cabecera" id="contenedor-cabecera">
+            <img src="img/logo_transparent.png" alt="Logo David Bernal Diaz" loading="lazy" class="logodbd-img">
+                <h1>David Bernal Diaz</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Conoceme</a></li>
+                    <li><a href="taryectoria.html">Trayectoria</a></li>
+                    <li><a href="publicacion.html">Publicaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="menu-hamburguesa" id="menu-hamburguesa">
+                    <ion-icon class="barras" name="menu-outline"></ion-icon>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="cont-redes" class="cont-redes">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons8-linkedin-144.png" alt="LinkedinDBD">David
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons8-github-144.png" alt="">GitHub
+            </a>
+
+        </section>
+        <section id="cont-enviar" class="cont-enviar">
+            <form action="">
+                <h3>Ponte en contacto conmigo</h3>
+                <label for="nom_ape">Nombre y Apellido</label>
+                <input type="text"  id="nom_ape" class="input-padron" required name="nombre_enviar" placeholder="Introduce tu Nombre y Apeido">
+
+                <label for="correo_electronico">Correo Electronico</label>
+                <input type="email"  id="correo_electronico" class="input-padron" required placeholder="Correo Electronico" name="correo_enviar">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="msj_enviar" id="mensaje" cols="70" rows="10" class="input-padron" required placeholder="Redacta tus requerimietos"></textarea>
+
+                <label for="enviar_btn" class="enviar_btn">Enviar</label>
+                <input type="submit" value="Enviar" id="btn-enviar" class="btn-enviar">          
+        </section>  
+    </main>
+
+    <footer>
+        <p class="derechos-dbd">&copy; Copyright 2024</p>
+        <p class="derechos-dbd2">Desarrollado con &#x2661; por
+            <a href="https://github.com/davidber0102" target="_blank">David Bernal Diaz</a>
+        </p>
+    </footer>
+</body>
+</html>

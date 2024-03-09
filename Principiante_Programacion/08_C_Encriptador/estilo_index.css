@@ -17,8 +17,8 @@ header{
 }
 
 .encabezado img{
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
 }
 
 nav{
@@ -99,7 +99,7 @@ nav a:hover{
 
 .img_tec img{
        width: 100%;
-       height: 600px;
+       height: 400px;
 }
 
 footer{
@@ -108,7 +108,3 @@ footer{
     background-color: #b9dcf3;
 }
 
-footer img{
-    width: 20%;
-    height: 20%;
-}
