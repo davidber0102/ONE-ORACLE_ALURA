@@ -1,5 +1,4 @@
-
-.contenedor-bioTot{
+.contenedor-contact{
     z-index: 2;  
     width: 1024px;
     height: 100%;
@@ -10,16 +9,17 @@
     margin: 0 auto;
 }
 
-.imgindex{ 
-    float: left;
-    margin-right: 2%;
+.img-contact{ 
+    float: right;
+    margin-left: 2%;
     padding: 2%;
 }
 
-main .bio_dbd article{
-    width: 95%; 
+
+main .cont-enviar article{
+    width: 90%; 
     height: auto;
-    
-    padding: 5%;
-    margin: 1% 0 15% 0;
+
+    padding: 4%;
+    margin: 2% 0 10% 5%;
 }

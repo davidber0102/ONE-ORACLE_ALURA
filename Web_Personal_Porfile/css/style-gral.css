@@ -10,8 +10,23 @@ body{
 
 header{
     background-color: rgba(196, 231, 253, 0.6);
+    margin-bottom: 1%;
 }
 
+header img{
+    width: 7%;
+}
+
+header img:hover{
+    width: 10%;
+    transform: rotate(90deg);
+    border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #b36505;
+    transform: rotateY(180deg);
+transform-style: preserve-3d;
+filter: saturate(480%);
+border: none;
+}
 .contenedor-cabecera{
     width: 1024px;
     position: relative;
@@ -20,7 +35,7 @@ header{
 }
 
 .contenedor-cabecera h1{
-    font-size: 1.45em;
+    font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .2em;
@@ -29,10 +44,16 @@ header{
     color:rgb(8, 44, 141);
 }
 
+.contenedor-cabecera h1:hover{
+    color: #b36505;
+    font-size: 1.6em;
+    text-decoration: underline;
+    filter: saturate(380%);
+}
 nav{
     position: absolute;  
-    top: 6em;
-    right:.3em;
+    top: 3em;
+    right:.2em;
     
 }
 
@@ -44,7 +65,7 @@ nav a{
     text-transform: uppercase;
     color:rgb(7, 48, 161);
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none;
     margin-right: 1em;
     letter-spacing: .2em;    
@@ -53,8 +74,9 @@ nav a{
 
 nav a:hover{
     color: #b36505;
-    font-size: 1.45em;
+    font-size: 1.5em;
     text-decoration: underline;
+    filter: saturate(380%);
 }
 
 .menu-hamburguesa {
@@ -75,8 +97,72 @@ nav a:hover{
     display: flex;
     clear: both;
     border: #000 solid 3px;
+
 }
 
+main img{
+    border-radius: 39px;
+    box-shadow: 15px 15px rgba(7, 48, 161, .4);
+    border-right: 5px solid rgba(7, 48, 161, .8);
+    border-bottom: 5px solid rgba(7, 48, 161, .8);
+    filter: opacity(.85);
+
+}
+
+main img:hover{
+    border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #b36505;
+    transform: rotateY(180deg);
+transform-style: preserve-3d;
+filter: saturate(480%);
+border: none;
+
+}
+
+article{
+    background-color: rgba(206, 222, 249, 0.6);
+    border-right: 5px solid rgba(7, 48, 161, .7);
+    border-bottom: 5px solid rgba(7, 48, 161, .7);    
+    border-radius: 39px;
+    box-shadow: 15px 15px rgba(7, 48, 161, .4);
+    
+}
+
+article:hover{
+    border-radius:20%;
+    box-shadow: 0px 0px 15px 15px #b36505;
+    transform: scale(1.1);
+transform-style: preserve-3d;
+filter: saturate(280%);
+border: none;
+font-size: 1.2em;
+}
+
+figure img{
+    margin-bottom: 8%;
+}
+
+article h2{
+    font-size: 1.6em;
+    font-weight: 900;
+    text-align: center;
+    margin: 1%;
+}
+
+article h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+    margin: 1%;
+}
+
+article p{
+    font-size: 1.05em;
+   text-align:justify;
+   line-height: 1.6em;
+   margin-bottom: 3%;
+}
 
 
 footer{

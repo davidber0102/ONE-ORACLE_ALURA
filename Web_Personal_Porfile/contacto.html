@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style-gral.css">
     <link rel="stylesheet" href="css/styile-inicio.css">
+    <link rel="stylesheet" href="css/style-contac.css".css">
     <link rel="shortcut icon" href="img/logo_icon-t.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,30 +33,36 @@
     </header>
 
     <main>
-        <section id="cont-redes" class="cont-redes">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="img/icons8-linkedin-144.png" alt="LinkedinDBD">David
-            </a>
-
-            <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="img/icons8-github-144.png" alt="">GitHub
-            </a>
-
+        <section lass="contenedor-contact" id="contenedor-contact">
+            <div class="img-contact">
+                <figure>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icons8-linkedin-144.png" alt="LinkedinDBD">David
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icons8-github-144.png" alt="">GitHub
+                    </a>
+                </figure>
+            </div>
         </section>
         <section id="cont-enviar" class="cont-enviar">
-            <form action="">
-                <h3>Ponte en contacto conmigo</h3>
-                <label for="nom_ape">Nombre y Apellido</label>
-                <input type="text"  id="nom_ape" class="input-padron" required name="nombre_enviar" placeholder="Introduce tu Nombre y Apeido">
+            <article>
+                <form action="">
+                    <h3>Ponte en contacto conmigo</h3>
+                    <label for="nom_ape">Nombre y Apellido</label>
+                    <input type="text"  id="nom_ape" class="input-padron" required name="nombre_enviar" placeholder="Introduce tu Nombre y Apeido">
 
-                <label for="correo_electronico">Correo Electronico</label>
-                <input type="email"  id="correo_electronico" class="input-padron" required placeholder="Correo Electronico" name="correo_enviar">
+                    <label for="correo_electronico">Correo Electronico</label>
+                    <input type="email"  id="correo_electronico" class="input-padron" required placeholder="Correo Electronico" name="correo_enviar">
 
-                <label for="mensaje">Mensaje</label>
-                <textarea name="msj_enviar" id="mensaje" cols="70" rows="10" class="input-padron" required placeholder="Redacta tus requerimietos"></textarea>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="msj_enviar" id="mensaje" cols="70" rows="10" class="input-padron" required placeholder="Redacta tus requerimietos"></textarea>
 
-                <label for="enviar_btn" class="enviar_btn">Enviar</label>
-                <input type="submit" value="Enviar" id="btn-enviar" class="btn-enviar">          
+                    <label for="enviar_btn" class="enviar_btn">Enviar</label>
+                    <input type="submit" value="Enviar" id="btn-enviar" class="btn-enviar">          
+            </article>
         </section>  
     </main>
 
