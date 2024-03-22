@@ -7,19 +7,77 @@
     clear: both;
     position: relative;
     margin: 0 auto;
-}
-
-.img-contact{ 
-    float: right;
-    margin-left: 2%;
     padding: 2%;
 }
 
+.img-contact{ 
+    width: 190px;
+    float: right;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+}
 
-main .cont-enviar article{
-    width: 90%; 
-    height: auto;
+.img-contact figure{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 15%;
+    padding-left: 20%;
+    letter-spacing: 5px;
+    text-align: center;
+    
+}
 
-    padding: 4%;
-    margin: 2% 0 10% 5%;
+figure a:hover{
+    font-size: 1.4em;
+    color:  #a85e05;
+}
+
+
+.cont-enviar article{
+    width: 75%; 
+    height: 75%;
+    padding: 5%;
+    margin: 5% 0 0 11%;
+    text-align: center;
+}
+
+.cont-enviar p{
+    margin: 3%;
+}
+
+.cont-enviar h4{
+    margin: 4%;
+    font-size: 1.2em;
+    font-weight: 500;
+
+}
+
+form label{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+form input{
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+}
+
+.msj{
+    margin-top: 5%;
+}
+
+.btn-enviar{
+    margin: 2%;
+    font-size: 1.2em;
+    width: 30%;
+    color: rgb(136, 162, 207);
+    background-color: rgb(9, 50, 161);
+}
+
+.btn-enviar:hover{
+    font-size: 1.4em;    
 }

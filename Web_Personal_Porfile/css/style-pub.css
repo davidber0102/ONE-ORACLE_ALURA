@@ -1,0 +1,36 @@
+.cont-img-pub{
+    float: left;
+    margin: 5% 6% 0% 1%;
+    padding: 5%;
+}
+.cont-img-pub img{
+    margin-bottom: 25%;
+}
+
+
+.cont-prin-pub article{
+    width: 85%; 
+    height: 85%;
+    margin: 5% 0 5% 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+}
+
+.cont-prin-pub  img{
+    display: inline;
+    object-fit: cover;
+    margin-top: 8px;
+    margin-right: 10px;
+    padding: 0 6px;
+}
+
+article img{
+    border: none !important;     
+    border-radius: 1px;
+    box-shadow:none !important;
+    
+}
