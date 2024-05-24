@@ -23,7 +23,7 @@ function verificarIntento(){
         }else{
             asignarTextoElemto('p', 'Cerca, el numero es Mayor');
         }
-        intentos++;
+        git s++;
         limpiarCaja();
     }
     return;
